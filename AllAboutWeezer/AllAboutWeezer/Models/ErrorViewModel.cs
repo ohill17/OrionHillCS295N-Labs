@@ -1,4 +1,4 @@
-namespace AllAboutRiversCuomo.Models
+namespace AllAboutWeezer.Models
 {
     public class ErrorViewModel
     {
