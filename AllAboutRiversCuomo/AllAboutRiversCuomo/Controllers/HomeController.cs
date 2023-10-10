@@ -18,12 +18,9 @@ namespace AllAboutRiversCuomo.Controllers
             return View();
         }
 
-        public IActionResult History()
+        public IActionResult Privacy()
         {
             return View();
-        }
-        public IActionResult Forum() {
-            return View();  
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
