@@ -20,3 +20,28 @@ html {
 body {
   margin-bottom: 60px;
 }
+.list-group-item active {
+    margin: auto;
+}
+.row{
+    float:left;
+    margin: auto;
+    padding:10px;
+  
+}
+li {
+    list-style-type: none;
+}
+input {
+    float: right;
+}
+form {
+    width: 350px;
+}
+
+br {
+    clear: right;
+}
+btn btn-primary:hover{
+    font:x-large;
+}
