@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33627.172
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AllAboutWeezer", "AllAboutWeezer\AllAboutWeezer.csproj", "{32EFE24D-6B24-4603-A553-3D832836D868}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeezerUnitTests", "WeezerUnitTests\WeezerUnitTests.csproj", "{6398977C-12C5-4715-B36F-EAC764D6FFBD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{32EFE24D-6B24-4603-A553-3D832836D868}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32EFE24D-6B24-4603-A553-3D832836D868}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32EFE24D-6B24-4603-A553-3D832836D868}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32EFE24D-6B24-4603-A553-3D832836D868}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6398977C-12C5-4715-B36F-EAC764D6FFBD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6398977C-12C5-4715-B36F-EAC764D6FFBD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6398977C-12C5-4715-B36F-EAC764D6FFBD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6398977C-12C5-4715-B36F-EAC764D6FFBD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3BD57A77-AE91-4B7E-ADCE-E56010FDBF86}
+	EndGlobalSection
+EndGlobal
