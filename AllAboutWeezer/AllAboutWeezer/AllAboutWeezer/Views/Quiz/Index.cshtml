@@ -1,0 +1,19 @@
+﻿@model WeezyTests
+@{
+    ViewData["Title"] = "View";
+}
+<h1>Rivers Quiz</h1>
+<form method="post">
+    @Model.Questions[1]<br />
+    <input name="answer1" value="@Model.UserAnswers[1]" />
+    @((Model.UserAnswers[1] == "") ? "" : Model.Results[1] ? "Right" : "Wrong")
+    <br />
+    @Model.Questions[2]<br />
+    <input name="answer2" value="@Model.UserAnswers[2]" />
+    @((Model.UserAnswers[2] == "") ? "" : Model.Results[2] ? "Right" : "Wrong")
+    <br />
+    <br />
+    <input type="submit" />
+</form>
+
+
