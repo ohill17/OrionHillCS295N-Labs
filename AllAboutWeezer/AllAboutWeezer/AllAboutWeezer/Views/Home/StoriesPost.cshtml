@@ -7,35 +7,20 @@
 <h1>
     Stories about Rivers Cuomo and his band Weezer.
 </h1>
+
 @if (@Model != null)
 {
-    <table>
-
-        <tr>
-            <td>Title: </td>
-            <td>@Model.Title</td>
-        </tr>
-        <tr>
-            <td>Topic: </td>
-            <td>@Model.Topic</td>
-        </tr>
-        <tr>
-            <td>Story Year: </td>
-            <td>@Model.YearDate</td>
-        <tr/>
-        <tr>
-            <td>Story: </td>
-            <td>@Model.StoryBody</td>
-        </tr>
-        <tr>
-            <td>Username: </td>
-            <td>@Model.Username</td>
-        </tr>
-        <tr>
-            <td>Date: </td>
-            <td>@Model.Date</td>
-        </tr>
-           
-        
-    </table>
+   
+    @foreach (var message in Model)
+    {
+        <p>
+            From: @message.Username <br>
+            Title: @message.Title
+            Topic: @message.Topic
+            Year the Story Takes Place: @message.YearDate
+            Story: @message.StoryBody <br>
+            Date: @message.Date
+        </p>
+    }
 }
+
