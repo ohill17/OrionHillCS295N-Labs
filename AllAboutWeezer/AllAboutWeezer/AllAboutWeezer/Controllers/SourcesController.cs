@@ -9,4 +9,4 @@ namespace AllAboutWeezer.Controllers
             return View();
         }
     }
-}
+}     
