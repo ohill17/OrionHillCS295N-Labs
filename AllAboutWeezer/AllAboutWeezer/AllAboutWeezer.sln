@@ -5,7 +5,12 @@ VisualStudioVersion = 17.5.33627.172
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AllAboutWeezer", "AllAboutWeezer\AllAboutWeezer.csproj", "{32EFE24D-6B24-4603-A553-3D832836D868}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeezerTests", "WeezerTests\WeezerTests.csproj", "{8A6BD533-0D1C-42E6-87CF-DF40DAFB8A17}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WeezerTests", "WeezerTests\WeezerTests.csproj", "{8A6BD533-0D1C-42E6-87CF-DF40DAFB8A17}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{761CCBC1-6DCD-4EEA-8CC5-BE9325AD56FF}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
