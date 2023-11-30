@@ -8,29 +8,22 @@ namespace AllAboutWeezer.Controllers
 {
     public class HomeController : Controller
     {
-        AppDbContext context;
-        public HomeController(AppDbContext c)
+        IForumRepository repository;
+        public HomeController(IForumRepository r)
         {
-            context = c;
+            repository = r;
         }
 
         // TODO: Do something interesting with the messageId
         public IActionResult StoriesPost(string messageId)
         {
             // Get the last post out of the database
-            var model = context.Message
-                
-                .ToList();
-           //Where(m => m.MessageId == int.Parse(messageId))
+            var messages = repository.GetMessages();
+            // .Where(m => m.MessageId == int.Parse(messageId))
             // .FirstOrDefault();
             // .Find(int.Parse(messageId));
-            return View(model);
+            return View(messages);
         }
-
-        private readonly ILogger<HomeController> _logger;
-
-     
-
         public IActionResult Index()
         {
             return View();
@@ -51,10 +44,10 @@ namespace AllAboutWeezer.Controllers
 
 
             // Save model to db
-            context.Message.Add(model);
-            context.SaveChanges();
+            int result;
+            result = repository.StoreMessage(model);
 
-            return RedirectToAction("Index", new { model.MessageId });
+            return RedirectToAction("StoriesPost", new { model.MessageId });
         }
         public IActionResult Privacy()
         {
