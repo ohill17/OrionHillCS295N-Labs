@@ -30,4 +30,10 @@
     <ProjectReference Include="..\AllAboutWeezer\AllAboutWeezer.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update="Settings.job">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>

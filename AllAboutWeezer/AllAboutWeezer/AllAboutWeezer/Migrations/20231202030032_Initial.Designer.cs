@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace AllAboutWeezer.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20231118225835_Initial")]
+    [Migration("20231202030032_Initial")]
     partial class Initial
     {
         /// <inheritdoc />
@@ -39,8 +39,9 @@ namespace AllAboutWeezer.Migrations
 
             modelBuilder.Entity("AllAboutWeezer.Models.Message", b =>
                 {
-                    b.Property<string>("MessageId")
-                        .HasColumnType("varchar(255)");
+                    b.Property<int>("MessageId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
 
                     b.Property<DateOnly>("Date")
                         .HasColumnType("date");
@@ -66,7 +67,7 @@ namespace AllAboutWeezer.Migrations
 
                     b.HasKey("MessageId");
 
-                    b.ToTable("Messages");
+                    b.ToTable("Message");
                 });
 #pragma warning restore 612, 618
         }

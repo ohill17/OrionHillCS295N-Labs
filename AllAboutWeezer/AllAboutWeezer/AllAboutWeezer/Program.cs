@@ -16,6 +16,7 @@ var connectionString =
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString)));
 
+builder.Services.AddTransient<IForumRepository, ForumRepository>();
 
 
 //builder.Services.AddDbContext<AppDbContext>(options =>
